@@ -1,0 +1,96 @@
+/* Chaos Karts' web pages: the privacy policy and support pages the App Store
+   links to. Bright like the game, easy to read on a phone. */
+
+:root {
+	--sky: #3fa9f5;
+	--sky-deep: #1d6fd6;
+	--sun: #ffc93c;
+	--ink: #2a1a5e;
+	--text: #26233a;
+	--muted: #5c5874;
+	--card: #ffffff;
+	--page: #eaf5ff;
+	--line: #d5e6f7;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #ecebf5;
+		--muted: #b4b1c8;
+		--card: #1f1d33;
+		--page: #14122a;
+		--line: #34315a;
+	}
+}
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	background: var(--page);
+	color: var(--text);
+	font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+header {
+	background: linear-gradient(160deg, var(--sky), var(--sky-deep));
+	padding: 36px 16px 44px;
+	text-align: center;
+}
+
+header a.logo {
+	color: var(--sun);
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 1px;
+	-webkit-text-stroke: 2px var(--ink);
+	paint-order: stroke fill;
+	text-shadow: 0 4px 0 var(--ink);
+}
+
+header p {
+	color: #fff;
+	margin: 10px 0 0;
+	font-weight: 600;
+}
+
+main {
+	max-width: 720px;
+	margin: -22px auto 40px;
+	padding: 0 16px;
+}
+
+.card {
+	background: var(--card);
+	border-radius: 20px;
+	padding: 24px 22px;
+	box-shadow: 0 6px 24px rgba(20, 40, 90, 0.12);
+}
+
+h1 { font-size: 28px; margin: 0 0 4px; }
+h2 { font-size: 20px; margin: 28px 0 6px; }
+.updated { color: var(--muted); margin: 0 0 18px; font-size: 15px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--sky-deep); }
+@media (prefers-color-scheme: dark) { a { color: var(--sky); } }
+
+.big-list { list-style: none; padding: 0; }
+.big-list a {
+	display: block;
+	margin: 12px 0;
+	padding: 16px 18px;
+	border: 2px solid var(--line);
+	border-radius: 14px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 19px;
+}
+
+footer {
+	text-align: center;
+	color: var(--muted);
+	font-size: 14px;
+	padding: 0 16px 32px;
+}
